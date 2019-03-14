@@ -13,6 +13,13 @@
 }
 
 @font-face{
+    font-family: 'Lato';   
+    src: url('../fonts/Lato-black.ttf') format('truetype');
+    font-weight: 900;   
+    font-style: normal; 
+}
+
+@font-face{
     font-family: 'MavenPro';   
     src: url('../fonts/MavenPro-Regular.ttf') format('truetype');
     font-weight: normal;   
