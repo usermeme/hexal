@@ -37,9 +37,15 @@ h1 {
 }
 
 nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 nav li {
@@ -55,6 +61,7 @@ nav a {
     text-decoration: none;
     font-size: 0.6em;
     color: #ffffff;
+    -webkit-transition: color 0.3s ease;
     transition: color 0.3s ease;
 }
 
@@ -78,7 +85,8 @@ nav a:hover {
 figure:not(.figure-logo) {
     position: relative;
 	background: #000;
-    clip-path: var(--hex);
+    -webkit-clip-path: var(--hex);
+            clip-path: var(--hex);
     display: inline-block;
     width: 182px;
     height: 209px;
@@ -86,6 +94,7 @@ figure:not(.figure-logo) {
 }
 
 img {
+	-webkit-transition: all .5s;
 	transition: all .5s;
 }
 
@@ -129,11 +138,13 @@ p {
 }
 
 #portfolio img {
+	-webkit-transition: all .5s;
 	transition: all .5s;
 }
 
 #portfolio img:hover {
-    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
 }
 
 #portfolio figure:first-child,
@@ -167,6 +178,8 @@ p {
 }
 
 #about .about-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 55px 0;
 }
@@ -179,12 +192,18 @@ p {
 }
 
 #about .about-information {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 #about .about-information-social {
-    align-self: end;
+    -ms-flex-item-align: end;
+        align-self: end;
     width: 8.6em;
 }
 
@@ -194,11 +213,14 @@ p {
 }
 
 #about p {
-    flex: 1;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
 }
 
 #about a {
     margin: 0 -2px;
+    -webkit-transition: all 0.5s;
     transition: all 0.5s;
     display: inline-block;
     width: 1.5em;
@@ -209,7 +231,8 @@ p {
 }
 
 #about a:hover {
-    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
 }
 
 #about a:first-child {
@@ -263,14 +286,23 @@ p {
 }
 
 .get-in-touch-communication {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 #get-in-touch form {
-    flex: 1 0 580px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 580px;
+            flex: 1 0 580px;
     margin-right: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 #get-in-touch input,
@@ -289,8 +321,10 @@ p {
 #get-in-touch input[type="submit"] {
     width: 90px;
     background-color: #2eb398;
-    align-self: end;
+    -ms-flex-item-align: end;
+        align-self: end;
     text-transform: uppercase;
+    -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
     font-weight: bold; 
 }
@@ -324,6 +358,7 @@ p {
     font-weight: bold;
     text-decoration: none;
     color: #bebebe;
+    -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
 
@@ -388,11 +423,16 @@ footer p {
 
 @media screen and (max-width: 782px) {
     .get-in-touch-communication {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     #get-in-touch form {
-        flex: 0 0;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0;
+                flex: 0 0;
         margin-right: 0;
     }
 
@@ -418,7 +458,10 @@ footer p {
 
 @media screen and (max-width: 540px) {
     #about .about-content {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 }
 
@@ -432,7 +475,7 @@ footer p {
     }
 
     #portfolio figure:nth-child(even) {
-        margin-left: 110px;
+        margin-left: 110`px;
     }
 
 
