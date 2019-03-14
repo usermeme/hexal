@@ -1,10 +1,12 @@
 body {
-    font-family: "Lato", "AdobeInvisFont", "MyriadPro";
+    font-family: "Lato", sans-serif;
     font-size: 16px;
+    color: #ffffff;
 }
 
 .container {
     margin: 0 auto;
+    padding: 0 20px;
     max-width: 820px;
     overflow: hidden;
 }
@@ -72,11 +74,46 @@ nav a:hover {
     --hex: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
 
+figure:not(.figure-logo) {
+    position: relative;
+	background: #000;
+    clip-path: var(--hex);
+    display: inline-block;
+    width: 182px;
+    height: 209px;
+    margin: 0;
+}
+
+img {
+	transition: all .5s;
+}
+
+h2,
+h3 {
+    font-family: "MavenPro", sans-serif;
+}
+
+h2 {
+    font-size: 2.5em;
+    color: #d7ffe9
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+p {
+    text-align: justify;
+    font-size: 0.8em;
+    line-height: 2em;
+}
+
 /* portfolio settings */ 
 
 #portfolio .container {
     max-width: 1012px;
     margin: 11px auto;
+    padding: 0;
     border-top: 1px solid #e4e9eb;
     border-bottom: 1px solid #e4e9eb;
 }
@@ -86,18 +123,11 @@ nav a:hover {
 }
 
 #portfolio figure {
-    position: relative;
-	background: #000;
-    clip-path: var(--hex);
     display: inline-block;
-    width: 182px;
-    height: 209px;
     margin: -30px 9px;
-    
 }
 
 #portfolio img {
-	height: 100%;
 	transition: all .5s;
 }
 
@@ -124,3 +154,196 @@ nav a:hover {
 }
 
 /* about settings */
+
+#about {
+    background-color: #2eb398;
+    padding: 13px 0 12px;
+}
+
+#about .container {
+    border-left: 1px solid #219d84;
+    border-right: 1px solid #219d84;
+}
+
+#about .about-content {
+    display: flex;
+    margin: 55px 0;
+}
+
+#about figure {
+    margin-right: 20px;
+}
+#about img {
+    margin-left: -120px;
+}
+
+#about .about-information {
+    display: flex;
+    flex-direction: column;
+}
+
+#about .about-information-social {
+    align-self: end;
+    width: 8.6em;
+}
+
+#about h3 {
+    color: #20816d;
+    margin-bottom: 19px;
+}
+
+#about p {
+    flex: 1;
+}
+
+#about a {
+    margin: 0 -2px;
+    transition: all 0.5s;
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    line-height: 1.5em;
+    text-align: center;
+    color: #2eb398;
+}
+
+#about a:hover {
+    transform: scale(1.3);
+}
+
+#about a:first-child {
+    background-color: #a4dbd4;
+}
+
+#about a:nth-child(2) {
+    background-color: #6ccbbe;
+}
+
+#about a:nth-child(3) {
+    background-color: #7ed0c5;
+}
+
+#about a:nth-child(4) {
+    background-color: #abddd7;
+}
+
+#about a:nth-child(5) {
+    background-color: #acddd7;
+}
+
+#about a:last-child {
+    background-color: #6dcbbe;
+}
+
+/* get in touch settings */ 
+
+#get-in-touch {
+    background-color: #323232;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.get-in-touch-container {
+    margin: 0 auto;
+    padding: 53px 0;  
+    max-width: 960px;
+    border-top: 1px solid #2b2b2b;
+    border-bottom: 1px solid#2b2b2b;
+}
+
+#get-in-touch h3,
+#get-in-touch input,
+#get-in-touch textarea {
+    color: #bebebe;
+}
+
+#get-in-touch h3 {
+    margin-bottom: 20px;
+}
+
+.get-in-touch-communication {
+    display: flex;
+}
+
+#get-in-touch form {
+    flex: 1 0 580px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#get-in-touch input,
+#get-in-touch textarea {
+    background-color: #454545;
+    border: none;
+    margin-top: 16px;
+    padding: 0.75em;
+}
+
+#get-in-touch textarea {
+    resize: none;
+    min-height: 150px;
+}
+
+#get-in-touch input[type="submit"] {
+    width: 90px;
+    background-color: #2eb398;
+    align-self: end;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    font-weight: bold; 
+}
+
+#get-in-touch input[type="submit"]:hover {
+    background-color: #3ec398;
+}
+
+#get-in-touch input:first-child {
+    margin: 0;
+}
+
+#get-in-touch span {
+    font-weight: 900;
+}
+
+#get-in-touch address {
+    margin-top: 46px;
+    font-size: 0.8em;
+    line-height: 2em;
+}
+
+#get-in-touch address span {
+    display: inline-block;
+    width: 2em;
+    color: #2eb398;
+}
+
+#get-in-touch address a {
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: #bebebe;
+    transition: all 0.3s ease;
+}
+
+#get-in-touch address a:hover {
+    color: #2eb398;
+}
+
+/* footer settgings */
+
+footer {
+    background-color: #222222;
+}
+
+footer .container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+footer p {
+    font-family: "MavenPro", sans-serif;
+    font-size: 0.8em;
+    line-height: 3.3em;
+    color: #454545;
+}
