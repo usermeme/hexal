@@ -479,8 +479,6 @@ footer p {
     }
 
     #portfolio figure:nth-child(even) {
-        margin-left: 110`px;
+        margin-left: 110px;
     }
-
-
 }
