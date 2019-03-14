@@ -72,6 +72,7 @@ nav a:hover {
 
 :root {
     --hex: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    --boxWidth: 203px;
 }
 
 figure:not(.figure-logo) {
@@ -111,7 +112,7 @@ p {
 /* portfolio settings */ 
 
 #portfolio .container {
-    max-width: 1012px;
+    max-width: calc(var(--boxWidth) * 5);
     margin: 11px auto;
     padding: 0;
     border-top: 1px solid #e4e9eb;
@@ -346,4 +347,93 @@ footer p {
     font-size: 0.8em;
     line-height: 3.3em;
     color: #454545;
+}
+
+/* media screens */
+
+@media screen and (max-width: 1030px) {
+    #portfolio .container {
+        max-width: calc(var(--boxWidth) * 4);
+    }
+
+    #portfolio figure:nth-child(5),
+    #portfolio figure:nth-child(12) {
+        margin-left: 110px;
+    }
+
+    #portfolio figure:last-child {
+        margin-left: 204px;
+    }
+
+    #portfolio figure:first-child,
+    #portfolio figure:nth-child(10) {
+        margin-left: 9px;
+    } 
+}
+
+@media screen and (max-width: 800px) {
+    #portfolio .container {
+        max-width: calc(var(--boxWidth) * 3);
+    }
+
+    #portfolio figure:nth-child(n) {
+        margin-left: 9px;
+    }
+
+    #portfolio figure:nth-child(4),
+    #portfolio figure:nth-child(9) {
+        margin-left: 110px;
+    }
+}
+
+@media screen and (max-width: 782px) {
+    .get-in-touch-communication {
+        flex-direction: column;
+    }
+
+    #get-in-touch form {
+        flex: 0 0;
+        margin-right: 0;
+    }
+
+    #get-in-touch .description {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    #portfolio .container {
+        max-width: calc(var(--boxWidth) * 2);
+    }
+
+    #portfolio figure:nth-child(n) {
+        margin-left: 9px;
+    }
+
+    #portfolio figure:nth-child(3n) {
+        margin-left: 110px;
+    }
+
+}
+
+@media screen and (max-width: 540px) {
+    #about .about-content {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    #portfolio .container {
+        max-width: calc(var(--boxWidth) * 1.5);
+    }
+
+    #portfolio figure:nth-child(n) {
+        margin-left: 9px;
+    }
+
+    #portfolio figure:nth-child(even) {
+        margin-left: 110px;
+    }
+
+
 }
