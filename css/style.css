@@ -207,7 +207,7 @@ p {
 
 #about .about-information-social {
     -ms-flex-item-align: end;
-        align-self: end;
+        align-self: flex-end;
     width: 8.6em;
 }
 
@@ -326,7 +326,7 @@ p {
     width: 90px;
     background-color: #2eb398;
     -ms-flex-item-align: end;
-        align-self: end;
+        align-self: flex-end;
     text-transform: uppercase;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
